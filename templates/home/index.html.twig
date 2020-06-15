@@ -1,15 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello HomeController!{% endblock %}
+{% block title %}Accueil{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+
 
 <div class="example-wrapper">
-    <h1><span class="uk-icon uk-icon-image" id="dwarf" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRhybiAcPqZmEAGGD51mU8kXp0VThRjV2ndMV_Wv4i9TkzG8lA2&usqp=CAU);"></span> Bienvenue Etranger! <span class="uk-icon uk-icon-image" id="kratos"></span></h1>
+    <h1 class="title"><span class="uk-icon uk-icon-image" id="dwarf" style="background-image: url({{asset('img/dwarf.png')}});"></span> Bienvenue Etranger! <span class="uk-icon uk-icon-image" id="kratos" style="background-image: url({{asset('img/kratos.png')}});"></span></h1>
 
 </div>
 {% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Un Aventurier à gérer
+{% endblock %}
+{% block body %}
+    {% if mode== 'new' %}
+        <h1 class="title"> Dis nous qui tu es étranger</h1>
+    {% else %}
+        <h1 class="title">Que deviens tu Aventurier</h1>        
+    {% endif %}
+
+    {{ include('hero/form_hero.html.twig') }}
+
+{% endblock %}

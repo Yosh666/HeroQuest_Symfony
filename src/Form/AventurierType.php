@@ -22,16 +22,16 @@ class AventurierType extends AbstractType
             ->add('race',TextType::class)
             ->add('align',IntegerType::class,[
                 'label'=>'alignement',
-                'placeholder'=>'-10 to +10'
+                'help'=>'-10 to +10'
             ])
-            ->add('quests',EntityType::class,[
+            /*->add('quests',EntityType::class,[
                 'class'=> Quest::class,
                 'label'=> 'Quête',
                 'choice_label'=>'title',
                 'required'=>false,
                 'multiple'=>false,
                 'expanded'=>true
-            ])
+            ])*/
         ;
     }
 

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Aventuriers{% endblock %}
+
+{% block body %}
+    <h1 class="title">Liste des Aventuriers</h1>
+    {% for aventurier in aventuriers %}
+        <p>
+            {{aventurier.name}} le {{aventurier.race}}
+               
+        <a class="uk-button-primary" href="{{ path('hero_edit')}} ">Editer</a>
+       </p>
+    {% endfor %}
+    <div class="uk-dark">
+       
+        <a class="uk-button-default" href="{{ path('hero_new')}} ">Un nouvel aventurier?</a>
+       
+    </div>
+
+{% endblock %}
